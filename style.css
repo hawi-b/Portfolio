@@ -47,6 +47,9 @@ html{
         text-decoration: none;
     }
 }
+.home .header .navbar .toggle {
+    display: none;
+}
 .home .header .btn{
     display:flex;
     padding-left: 150px;
@@ -361,14 +364,14 @@ p{
     }
 
     .home .header .navbar {
-        order: 1;
-        flex: 1 1 100%;
-        flex-wrap: wrap;
-        gap: 16px 24px;
-        justify-content: center;
-        margin: 0;
-        padding-top: 10px;
-    }
+    order: 1;
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+    gap: 16px 24px;
+    justify-content: center;
+    margin: 0;
+    padding-top: 10px;
+}
 
     .home .header .navbar span {
         margin-left: 0;
@@ -468,6 +471,48 @@ p{
 }
 
 @media (max-width: 600px) {
+    .home .header .navbar .toggle {
+        display: block;
+        margin-left: auto;
+        cursor: pointer;
+    }
+
+    .home .header .navbar span {
+        display: none;
+    }
+
+    .home .header .navbar {
+        position: relative;
+        justify-content: flex-end;
+    }
+
+    .home .header .navbar:hover > span {
+        display: block;
+        position: absolute;
+        right: 0;
+        width: 150px;
+        margin: 0;
+        padding: 8px 12px;
+        background: #f7f0eb;
+        z-index: 10;
+    }
+
+    .home .header .navbar:hover > span:nth-child(1) {
+        top: 100%;
+    }
+
+    .home .header .navbar:hover > span:nth-child(2) {
+        top: calc(100% + 36px);
+    }
+
+    .home .header .navbar:hover > span:nth-child(3) {
+        top: calc(100% + 72px);
+    }
+
+    .home .header .navbar:hover > span:nth-child(4) {
+        top: calc(100% + 108px);
+    }
+
     .home .header {
         padding: 16px 20px 0;
     }
@@ -477,7 +522,7 @@ p{
     }
 
     .home .header .btn .connects {
-        width: 112px;
+        display:none;
     }
 
     .home .home-details {
