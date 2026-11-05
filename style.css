@@ -1,15 +1,15 @@
 html,body{
     margin:0%;
     padding:0%;
-    font-family:Arial, Helvetica, sans-serif;
 }
 *{
     box-sizing:border-box;
+    font-family:Calibri;
 }
 html{
     background:
         radial-gradient(
-            circle at 80% 20%,
+            circle at 80% 15%,
             rgba(255, 100, 90, 0.5),
             transparent 40%
         ),
@@ -42,19 +42,26 @@ html{
 .home .header .navbar span{
     margin-left: 40px;
     font-weight: 500;
+    a{
+        color:black;
+        text-decoration: none;
+    }
 }
 .home .header .btn{
     display:flex;
     padding-left: 150px;
     padding-top: 10px;
     .connects{
-        
     font-size:15px;
     width:120px;
     height:40px;
     background:rgba(255,255,255,0.6);
     border-radius:999px;
     border-color: transparent;
+    a{
+       text-decoration: none;
+    }
+    
     }
 }
 .home .home-details{
@@ -90,4 +97,257 @@ html{
         font-size:23px;
         color:rgba(0,0,0,0.7);
     }
+}
+.extra .view{
+    margin-left: 20px;
+   font-size:15px;
+    width:120px;
+    height:40px;
+    background:rgba(255, 100, 90, 0.8);
+    border-radius:999px;
+    border-color: transparent;
+    color:white;
+    a{
+        text-decoration: none;
+    }
+}
+.extra .about{
+    margin-left: 20px;
+    font-size:15px;
+    width:120px;
+    height:40px;
+    background:rgba(255,255,255,0.6);
+    border-radius:999px;
+    border-color: transparent;
+    a{
+        text-decoration: none;
+    }
+}
+#background {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    margin-top:50px; 
+    margin-bottom:100px;
+    padding: 30px 100px 20px;
+    color:rgba(0,0,0,0.7);
+    .detail-1{
+        padding: 20px;
+        background-color:transparent;
+        border-radius: 10px;
+        h2{
+        text-indent: 15px;
+        color: rgba(255, 100, 90, 0.8);
+        font-weight:600;
+        font-size: 20px;
+        }
+        p{
+            letter-spacing: 0.8px;
+            font-size: 20px;
+        }
+        h1{
+            margin-top: -5px;
+            font-weight:700;
+        }
+    }
+}
+#background .detail-2{
+    margin: 30px 20px 20px;
+    padding: 10px 20px 0px;
+    background-color:rgba(255, 100, 90, 0.02);
+    border-radius: 10px;
+    h2{
+        text-indent: 15px;
+        color: rgba(0, 0, 0, 0.69);
+        font-weight:600;
+        font-size: 30px;
+    }
+    ul {
+    list-style: none;
+    padding-left: 0;
+}
+li{
+    font-size: 25px;
+    font-weight:400;
+}
+li::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url("checked.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+p{
+    font-size: 23px;
+    margin-top: 50px;
+    font-weight: 600;
+    .btn{
+        display:inline-block;
+        text-decoration: none;
+    margin-left:30px;
+     font-size:16px;
+    width:150px;
+    height:40px;
+    background:rgba(0, 0, 0,0.89);
+    color:white;
+    border-radius:999px;
+    border-color: transparent;
+    padding-left:7px;
+    padding-top: 5px;
+} 
+}
+}
+#background .additional-detail{
+    display:flex;
+    gap: 20px;
+    margin-top: 20px;
+    .years, .projects{
+        margin-top: 20px;
+        background-color:rgba(255, 100, 90, 0.04);
+        padding: 20px;
+        border-radius: 30px;
+        h1{
+            font-size: 20px;
+            font-weight:600;
+            color: rgba(0, 0, 0, 0.69);
+        }
+        .num{
+            color:rgba(255, 100, 90, 0.8);
+            font-size: 35px;
+            font-weight:900;
+        }
+    }
+}
+#projects{
+    margin-top: 100px;
+    .view-all{
+        display:flex;
+        flex-direction: row;
+    .selected{
+        text-align:left;
+        margin: 10px 100px 20px;
+        h1{
+        color: rgba(255, 100, 90, 0.6);
+        font-weight:600;
+        font-size: 18px;
+        margin-bottom: -20px;
+        }
+        p{
+            width:350px;
+            overflow-wrap: anywhere;
+            letter-spacing: 0.8px;
+            font-size: 27px;
+            font-weight: 600;
+            color:rgba(0, 0, 0, 0.6);
+            margin-bottom: -20px;
+        }
+    }
+    .view-all-btn{
+        margin-left:380px;
+        margin-top: 60px;
+        font-size:16px;
+    width:160px;
+    height:40px;
+    background:rgba(255,255,255,0.6);
+    border-radius:999px;
+    border-color: black;
+    }
+}
+}
+.projects-content{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 80px;
+    margin-right: 80px;
+    gap: 20px;
+    margin-bottom: 100px;
+    .project-1, .project-2, .project-3{
+        padding: 20px 20px 20px 5px;
+        border-radius: 10px;
+        .card-img-top{
+            width:100%;
+            height:100%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .card{
+            background:rgba(250, 250, 250, 0.6);
+            border-radius:15px;
+            overflow:hidden;
+            box-shadow:0 4px 10px rgba(0,0,0,0.1);}
+        .card-body{
+            padding:15px;}
+        .card-text{
+            font-size:20px;
+            font-weight:600;
+            text-align:center;
+            color:rgba(0, 0, 0, 0.9);}
+        .card-img-top{
+            width:100%;
+            height:250px;
+            object-fit:cover;}
+            }
+}
+#contact .quote{
+    margin:135px 80px 100px;
+
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:40px;
+
+    padding:25px 40px;
+
+    background:
+    radial-gradient(
+        circle at top left,
+        rgba(255, 100, 90, 0.25) 0%,
+        rgba(255, 100, 90, 0.12) 30%,
+        transparent 70%
+    ),
+    rgba(255, 100, 90, 0.03);
+
+    border-radius:30px;
+    .quote-word{
+        flex:1;
+        p{
+           margin-top:-10px;
+           font-size:28px;
+           font-weight:600;
+           line-height:1.4;
+           color:rgba(0,0,0,0.65);
+        }
+    }
+    .testimony h4{
+         color:rgba(0,0,0,0.65);
+        font-size:20px;
+    }
+}
+#contact .contact-info{
+    margin-left:80px;
+    color:rgba(0,0,0,0.65);
+    display:flex;
+    align-items:center;
+    gap:40%; 
+}
+
+#contact .contact-info .word{
+    flex:none;
+    margin-left: 10px;;
+}
+
+#contact .contact-info .address{
+    display:flex;
+    align-items:center;
+    gap:20px; /
+}
+
+#contact .contact-info .address a{
+    color:rgba(255,100,90,0.8);
+    font-size:28px;
+    text-decoration:none;
 }

@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
-    <div class="container">
+    <div class="portfolio-container">
         <div class="home">
             <div class="header">
                 <div class="navbar">
-                    <span>About</span>
-                <span>Education</span>
-                <span>Project</span>
-                <span>Contact</span>
+                    <span><a href="#background">About</a></span>
+                    <span><a href="#background">Education</a></span>
+                    <span><a href="#projects">Projects</a></span>
+                    <span><a href="#contact">Contact</a></span>
                 </div>                
             
                 <div class="btn">
-                    <button class="connects">Lets Connect</button>
+                    <button class="connects"><a href="https://linkedin.com/in/yourusername">Lets Connect</a></button>
                 </div>
                </div> 
             
@@ -27,9 +29,14 @@
                 <h1>Hi, I'm </h1></br>
                 <h1  class="name">Hawi K. Bacha</h1>
                 <div class="profile-contents">
-                    <p class="title">Junior Software Developer in <strong>Jimma,Ethiopia</strong></p>
+                    <p class="title">Junior Software Developer in <strong>Jimma, Ethiopia</strong></p>
                     <p class="desc">I design and develop modern SaaS web applications that help businesses scale faster using the latest technologies.</p>
                     </div>
+                    <div class="extra">
+                        <button class="view"><a href ="#projects">View my work</a></button>
+                        <button class="about"><a href="#background">About me</a></button>
+                    </div>
+                
             </div>
                 <div class="img">
                 <img class="image" src="image.png">
@@ -38,6 +45,121 @@
             </div>
             
         </div>
+        <section id="background">
+            <div class="detail-1">
+                <h2>About me</h2>
+                <h1>Passionate Developer</h1>
+            <p>I am a third year software engineering student at Jimma University, with a strong passion for web development and problem-solving. I have experience in building responsive and user-friendly web applications using modern technologies.</p>
+            <div class="additional-detail">
+                 <div class="years">
+                    <h1 class="num">1</h1>
+                    <h1>Year experience</h1>
+            </div>
+            <div class="projects">
+                <h1 class="num">5+</h1>
+                <h1>Projects completed</h1>
+        </div>
+            </div>
+            </div>
+           
+            <div class="detail-2">
+                <h2>✨ Core Competencies</h2>
+                <ul>
+                    <li>System design</li>
+                    <li>Web Programming </li>
+                    <li>Requirement Engineering</li>
+                    <li>User Interface Design</li>
+                </ul>
+                <br>
+                <br>
+                <hr color="rgba(255, 100, 70, 0.02)" size="0.5">
+                <p>Want a detailed look? <a class="btn" href="Resume.pdf">Download Resume</a></p>
+            </div>
+        </section>
+        <section id="projects">
+            <div class="view-all">
+                <div class="selected">
+            <h1>SELECTED WORK</h1>
+            <p>Designing and developing modern web applications that create an impact</p>
+        </div>
+        <div class="all-projects">
+            <button class="view-all-btn">View all projects</button>
+        </div>
+            </div>
+            
+    <div class="projects-content">
+        
+        <div class="project-1">
+            <div class="card" style="width: 18rem;">
+                <img src="data_science.jpg" class="card-img-top" alt="Data analyser web application">
+                <div class="card-body">
+                    <p class="card-text">
+                        Data Analyser
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-2">
+            <div class="card" style="width: 18rem;">
+                <img src="scheduler.jpg" class="card-img-top" alt="Task Scheduler">
+                <div class="card-body">
+                    <p class="card-text">
+                        Task Scheduler
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-3">
+            <div class="card" style="width: 18rem;">
+                <img src="edtech.jpg" class="card-img-top" alt="EdTech Platform">
+                <div class="card-body">
+                    <p class="card-text">
+                        EdTech Platform
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact">
+    <div class="quote">
+       <div class="quote-word">
+        <img src="quote.png" width="150" height="150" alt="quote">
+        <p>Hawi is a Team-player that makes sure everyone is on the same page. She delivers products on time.</p>
+    </div>
+    <div class="testimony">
+        <img src="avatar2.png" width="170" height="170" alt="testimony">
+        <h4>Doreen Edwina Owoo, Founder of Cipher</h4>
+    </div>
+    </div>
+    <div class="contact-info">
+        <div class="word">
+            <h2>Lets create something amazing together</h2>
+        </div>
+        <div class="address">
+        <a href="mailto:hawiketema1998@gmail.com">
+            <i class="fa-solid fa-envelope"></i>
+        </a>
+
+        <a href="https://github.com/hawi-b" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="https://linkedin.com/in/yourusername" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+            
+        </div>
+    </div>
+    
+</section>
+
     </div>
 </body>
 </html>
+
+
